@@ -132,29 +132,90 @@
                 <div class="portfolio-item">
                     <img src="/images/tbc-thumb.jpg" alt="Portfolio item 1" />
                     <div class="portfolio-item-text">
-                        <h3>Project Title</h3>
-                        <p>Description</p>
+                        <p class="prefix">web design & development</p>
+                        <h3>the bright connection</h3>
+                        <p>Custom website build, optimised for Google, reaching page 1 in just three weeks from
+                            launch.</p>
                         <a href="#" class="btn">View Project</a>
                     </div>
                 </div>
                 <div class="portfolio-item">
                     <img src="/images/outland-thumbnail.jpg" alt="Portfolio item 1" />
                     <div class="portfolio-item-text">
-                        <h3>Project Title</h3>
-                        <p>Description</p>
+                        <p class="prefix">shopify store set up & customisation</p>
+                        <h3>outland coffee</h3>
+                        <p>A boutique coffee bean brand, fully customised Shopify store build.</p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="/images/style-5-thumbnail.jpg" alt="Portfolio item 1" />
+                    <div class="portfolio-item-text">
+                        <p class="prefix">shopify store set up</p>
+                        <h3>style five fashion</h3>
+                        <p>E-commerce store built on Shopify for the urban fashion Style Five.</p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="/images/sustain-thumb.png" alt="Portfolio item 1" />
+                    <div class="portfolio-item-text">
+                        <p class="prefix">brochure website design & development</p>
+                        <h3>sustain gardens</h3>
+                        <p>This custom website enhanced the online presence for a commercial garden maintenance company.
+                        </p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="/images/feeval-thumb.png" alt="Portfolio item 1" />
+                    <div class="portfolio-item-text">
+                        <p class="prefix">explainer video & social media content</p>
+                        <h3>feeval</h3>
+                        <p>Engaging explainer video produced for Feeval, a software startup that streamlines
+                            communication between agencies & clients.</p>
                         <a href="#" class="btn">View Project</a>
                     </div>
                 </div>
             </div>
-
         </div>
-        <script>
-            const hamburger = document.querySelector('.hamburger');
-            const navLinks = document.querySelector('.nav-links');
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="/images/ko-logo-abstract.png" alt="Logo" />
+            </div>
+            <div class="footer-email">
+                <a href="mailto:email@example.com">kwadwo@kwadwooffei.com</a>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            Copyright &copy; <span id="year"></span> kwadwooffei.com
+        </div>
+    </footer>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        let lastScrollTop = 0;
+        const header = document.querySelector('header');
 
-            hamburger.addEventListener('click', () => {
-                navLinks.classList.toggle('open');
-            });
-        </script>
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+        });
+
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > lastScrollTop) {
+                // Downscroll
+                header.style.top = '-100px'; // Hide the header
+            } else {
+                // Upscroll
+                header.style.top = '0'; // Show the header
+            }
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
+        });
+    </script>
 </body>
 </html>
