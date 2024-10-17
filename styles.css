@@ -62,7 +62,7 @@ p {
 }
 
 .container {
-    max-width: 1240px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -249,7 +249,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1240px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 40px 20px;
 }
