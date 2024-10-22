@@ -92,6 +92,23 @@ header {
     background-color: #cf332b;
 }
 
+.btn-secondary {
+    background-color: #fff;
+    color: #EC5B53;
+    padding: 15px 30px;
+    border-radius: 5px;
+    border: 1px solid #EC5B53;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: #cf332b;
+    border: 1px solid #cf332b;
+    color: #fff;
+}
+
 .logo {
     padding-top: 10px;
 }
@@ -138,6 +155,7 @@ nav {
     justify-content: space-between;
     padding-top: 80px;
 }
+
 
 .hero-content {
     flex: 2;
@@ -267,6 +285,109 @@ nav {
     padding: 40px 0;
     border-top: 0.5px solid #ffffff;
 }
+
+/* Project page styles */
+
+.project-hero-ctn {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 80px;
+}
+
+.project-hero-content {
+    flex: 1;
+    margin-right: 80px;
+}
+
+.project-hero-content p:nth-last-of-type(1) {
+    margin-bottom: 50px;
+}
+
+.project-hero-content>.btn {
+    margin-right: 20px;
+}
+
+.project-hero-image {
+    flex: 1;
+}
+
+.project-hero-image>img {
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-details-ctn {
+    padding: 100px 0;
+}
+
+.project-overview {
+    display: flex;
+    flex: 2;
+}
+
+.overview-title {
+    flex: 1;
+}
+
+.highlights {
+    flex: 1;
+}
+
+.project-highlight {
+    box-sizing: border-box;
+    align-items: center;
+    display: flex;
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 300;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+.arrow-red {
+    padding: 0;
+    width: 12px;
+    margin-right: 16px;
+    align-self: center;
+}
+
+.tech-used {
+    background: linear-gradient(90deg, rgba(227, 7, 7, 0.77) 0%, rgba(224, 81, 81, 0.5) 100%);
+}
+
+.tech-logo-group {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5%;
+}
+
+.tech-logo {
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+}
+
+.tech-icon {
+    margin-right: 20px;
+}
+
+.tech-icon>img {
+    height: 40px;
+}
+
+.tech-icon-title {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 400;
+}
+
 
 @media (max-width: 976px) {
     h1 {
@@ -398,5 +519,34 @@ nav {
 
     .footer-email {
         padding-top: 30px;
+    }
+
+    .project-hero-ctn {
+        flex-direction: column;
+    }
+
+    .project-hero-content {
+        margin-right: 0;
+    }
+
+    .project-hero-image {
+        padding-top: 50px;
+    }
+
+    .project-overview {
+        flex-direction: column;
+        row-gap: 24px;
+    }
+
+    .tech-logo-group {
+        flex-direction: column;
+    }
+
+    .tech-logo {
+        padding-bottom: 30px;
+    }
+
+    .tech-logo:first-of-type {
+        margin-top: 30px;
     }
 }

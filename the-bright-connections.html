@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Bright Connections - Project Showcase</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Inter+Tight:ital,wght@0,100..900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="/images/ko-logo-abstract.png" alt="Logo" />
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#skills">Skills</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#portfolio">Portfolio</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </header>
+
+        <div class="project-hero-ctn">
+            <div class="project-hero-content">
+                <h1>A new fully custom website, optimised for Google, reaching page 1 in just three weeks.</h1>
+                <p>The Bright Connections Contact Centre serves as a connection between parents and children, assisting
+                    in the maintenance or re-establishment of contact when a parent has exited the family home.</p>
+                <p>Co-founders Natasha and Edson’s new website has enhanced their reputation as a reliable and efficient
+                    service provider.</p>
+                <a href="#" class="btn">Read more</a>
+                <a href="https://www.thebrightconnections.co.uk/" class="btn-secondary" target="_blank">Visit
+                    website</a>
+            </div>
+            <div class="project-hero-image">
+                <img src="/images/TBC-Top-Screen-Intro.png" alt="The Bright Connections" />
+            </div>
+        </div>
+
+        <div class="project-details-ctn">
+            <div class="project-details">
+                <div class="project-overview">
+                    <div class="overview-title">
+                        <h2>The TL;DR</h2>
+                    </div>
+                    <div class="highlights">
+                        <div class="project-highlight"><span><img class="arrow-red" src="images/arrow-right-red.svg"
+                                    alt="right arrow"></span><span>Ranked on page
+                                one of Google for “child contact centre Essex”
+                                within 3
+                                weeks.</span></div>
+                        <div class="project-highlight"><span><img class="arrow-red" src="images/arrow-right-red.svg"
+                                    alt="right arrow"></span><span>New referral
+                                inquiries started coming in weekly, boosting client
+                                engagement.</span></div>
+                        <div class="project-highlight"><span><img class="arrow-red" src="images/arrow-right-red.svg"
+                                    alt="right arrow"></span><span>Achieved
+                                Enhanced NACCC Accreditation, solidifying credibility and
+                                high
+                                service standards.</span></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="tech-used">
+        <div class="tech-logo-group">
+            <div class="tech-logo"><span class="tech-icon"><img src="/images/html-icon-white.svg"
+                        alt="html icon"></span><span class="tech-icon-title">html</span></div>
+            <div class="tech-logo"><span class="tech-icon"><img src="/images/tailwindcss-icon-white.svg"
+                        alt="tailwind css icon"></span><span class="tech-icon-title">tailwind css</span>
+            </div>
+            <div class="tech-logo"><span class="tech-icon"><img src="/images/js-icon-white.svg"
+                        alt="javascript icon"></span><span class="tech-icon-title">javascript</span></div>
+            <div class="tech-logo"><span class="tech-icon"><img src="/images/php-icon-white.svg"
+                        alt="php icon"></span><span class="tech-icon-title">php</span></div>
+            <div class="tech-logo"><span class="tech-icon"><img src="/images/laravel-icon-white.svg"
+                        alt="laravel icon"></span><span class="tech-icon-title">laravel</span></div>
+        </div>
+    </div>
+    <div class="container"></div>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="/images/ko-logo-abstract.png" alt="Logo" />
+            </div>
+            <div class="footer-email">
+                <a href="mailto:email@example.com">kwadwo@kwadwooffei.com</a>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            Copyright &copy; <span id="year"></span> kwadwooffei.com
+        </div>
+    </footer>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+        });
+    </script>
+</body>
+</html>
